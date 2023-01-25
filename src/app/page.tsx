@@ -1,17 +1,17 @@
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Unbounded } from "@next/font/google";
 import styles from "./page.module.css";
 import { FluidSimulation } from "@/components/FluidSimulation";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Unbounded({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
       <FluidSimulation className={styles.bg} />
       <main className={styles.main}>
-        <header className="container py-10">
+        {/* <header className="container py-10">
           <div className="flex justify-between items-center">
             <h1 className={inter.className + " " + "text-2xl font-semibold"}>
               R4Y
@@ -29,14 +29,20 @@ export default function Home() {
               </ul>
             </nav>
           </div>
-        </header>
+        </header> */}
 
         <section>
-          <div className="container py-5 text-center">
-            <h2 className="text-slate-400 text-lg">
+          <div className="container select-none h-screen flex items-center justify-center py-5 text-center">
+            <h2 className={`${inter.className} text-slate-400 text-lg`}>
               R4Y •{" "}
               <span className="text-white">creating things that look cool</span>{" "}
-              • tashkent, uzbekistan
+              • tashkent, uzbekistan •{" "}
+              <a
+                className="underline text-white pointer-events-auto"
+                href="https://blog.itsr4y.com"
+              >
+                blog
+              </a>
             </h2>
           </div>
         </section>
