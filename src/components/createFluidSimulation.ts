@@ -1,3 +1,5 @@
+// Fluid simulation made by Pavel Dobryakov
+// Source code: https://codepen.io/PavelDoGreat/pen/zdWzEL
 // @ts-nocheck
 export function createFluidSimulation(canvas) {
   "use strict";
